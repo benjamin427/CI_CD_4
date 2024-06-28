@@ -9,4 +9,4 @@ jobs:
       - name: Cucumber
         uses: cucumber/action-create-github-release@v1.1.1
         with:
-          start: mvn test
+          entryPoint: mvn test
