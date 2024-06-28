@@ -2,7 +2,7 @@ name: Maven Tests
 on: [push]
 jobs:
   maven-run:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/setup-node@v4
