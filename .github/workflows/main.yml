@@ -1,0 +1,12 @@
+name: Maven Tests
+on: [push]
+jobs:
+  maven-run:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/setup-node@v4
+      - name: Cucumber
+        uses: cucumber/action-create-github-release@v1.1.1
+        with:
+          start: mvn test
