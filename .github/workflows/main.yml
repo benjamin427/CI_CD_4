@@ -7,6 +7,6 @@ jobs:
       - name: Checkout
         uses: actions/setup-node@v4
       - name: Cucumber
-        uses: cucumber/action-create-github-release@v1.1.1
+        uses: cucumber-expressions@v17.1.0
         with:
           start: mvn test
